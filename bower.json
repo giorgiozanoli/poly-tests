@@ -1,0 +1,26 @@
+{
+  "name": "poly-tests",
+  "version": "0.0.0",
+  "homepage": "https://github.com/giorgiozanoli/poly-tests",
+  "authors": [
+    "Giorgio Zanoli <giorgio.zanoli@gmail.com>"
+  ],
+  "description": "Some tests with polymer",
+  "main": "index.htm",
+  "moduleType": [],
+  "keywords": [
+    "polymer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  }
+}
