@@ -1,0 +1,53 @@
+<link rel="import" href="../../vendor/polymer/polymer.html" />
+
+<dom-module id="hello-world">
+
+  <template>
+    <style>
+      /* CSS rules for your element */
+      :host {
+        margin:0;
+        padding:0;
+      }
+
+      div {
+        font-family: Calibri;
+        font-size:1rem;
+      }
+    </style>
+
+    <!-- local DOM for your element -->
+    <h1>{{sayHello}}</h1>
+  </template>
+
+  <script>
+    // element registration
+    Polymer({
+      is: "hello-world",
+
+      // add properties and methods on the element's prototype
+
+      properties: {
+        // declare properties for the element's public API
+        greeting: {
+          type: String,
+          value: "Hello!"
+        },
+        name : {
+          type: String,
+          value: 'Bob'
+        },
+        sayHello : {
+          type: String,
+          computed: 'sayHelloTo(greeting, name)'
+        }
+
+      },
+
+      sayHelloTo : function(greeting, name){
+        return greeting + ' ' + name + ', how are you?';
+      }
+    });
+  </script>
+
+</dom-module>
